@@ -1,0 +1,119 @@
+body{
+  background-color: #888888;
+  margin-top: 0px;
+  padding: 0;
+}
+
+div.body{
+  background-color: rgb(177, 177, 255);
+  width: 65%;
+  margin: auto;
+  padding: 0 5% 0 5%;
+  min-height: 100vh;
+  font-size: 18px;
+}
+
+h1{
+  text-align: center;
+  width: fit-content; 
+  margin: auto;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: white;
+  border: 1px solid black;
+  
+}
+
+.list {
+  list-style: none;
+  padding: 3%;
+  box-sizing: border-box;
+  background-color: #fcadff;
+  border-radius: 10px;
+  width: 100%;
+  border: solid 2px black;
+}
+
+.list li {
+  display: flex;
+  max-width: 100%;
+  padding: 3px;
+}
+
+.status,
+.content,
+.time,
+.edit,
+.delete {
+  padding: 3px;
+  flex: 1;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  height: auto;
+  overflow: auto;
+  overflow-wrap: break-word;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+.status {
+  flex: 1 1 5%;
+  margin-right: 3px;
+  margin-left: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.status input{
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  flex: 1 1 65%;
+  margin-right: 3px;
+}
+
+.time {
+  flex: 1 1 20%;
+  margin-right: 3px;
+}
+
+.edit,
+.delete {
+  flex: 1 1 5%;
+  margin-right: 3px;
+  box-shadow: inset -1px -1px 1px;
+}
+
+#addTask{
+  display: flex;
+  background-color: #eee;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 3px;
+  border: solid black 1px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 158, 174);
+  
+}
+
+button:hover{
+  transition: box-shadow 0.1s ease;
+  background-color: white;
+  box-shadow: inset -1px -1px 3px;
+}
+
+ul.list input{
+  background-color: white;
+}
+
+@media (orientation: portrait) and (max-aspect-ratio: 1/1) {
+  div.body{
+    width: 90%;
+  }
+}
